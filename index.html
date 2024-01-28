@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind link cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lakki+Reddy&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/16b91e1b50.js" crossorigin="anonymous"></script>
+    <title>Paradigm Pet Professionals</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        font-family: "Lakki Reddy", serif;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    h2 {
+        font-family: "Lakki Reddy", serif;
+    }
+
+    header {
+        font-weight: 700;
+    }
+
+    section {
+        background-image: url("./images/banner1.jpg");
+        margin-top: 25px;
+
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.8);
+        z-index: 1;
+        font-weight: 500;
+        background-color: aliceblue;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+
+<body>
+    <header class="bg-white mt-10">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <div class="flex-1 md:flex md:items-center md:gap-12">
+                    <a class="block text-teal-600" href="/">
+                        <img class="w-[100px] h-[100px]" src="./images/logo1.png" />
+                    </a>
+                    <h1>Paradigm Pet Professionals</h1>
+                </div>
+
+                <div class="md:flex md:items-center md:gap-12">
+                    <nav aria-label="Global" class="hidden md:block">
+                        <ul class="flex items-center gap-6 text-sm">
+                            <li>
+                                <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Pets
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="./pages/cats.html">Cats</a>
+                                        <a href="./pages/dogs.html">Dogs</a>
+                                        <a href="./pages/smallAnimals.html">Small Animals</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="text-gray-500 transition hover:text-gray-500/75" href="#contact">
+                                    Contact
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                                    Blog
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </nav>
+
+                    <div class="flex items-center gap-4 ">
+                        <div class="sm:flex sm:gap-4 ">
+                            <a class="rounded-md bg-[#003B6D] px-5 py-2.5 text-sm font-medium text-white shadow"
+                                href="/">
+                                Sign In
+                                <i class="fa-solid fa-paw"></i>
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+
+
+    <section class="overflow-hidden bg-cover bg-top bg-no-repeat">
+        <div class="bg-black/25 p-8 md:p-12 lg:px-20 lg:py-[10rem]">
+            <div class="text-left ltr:sm:text-left rtl:sm:text-right">
+                <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-5xl">Evidence-based pet care advice for
+                    <br>every pet lover
+                </h2>
+
+                <div class="mt-4 sm:mt-8 ">
+                    <a href="#contact"
+                        class="inline-block rounded-full bg-[#003B6D] px-12 py-3 text-sm font-medium text-white transition hover:bg-blue-800 focus:outline-none focus:ring ">
+                        Schedule a Consultation
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container my-24 mx-auto md:px-32 sm:grid-cols-1">
+        <div class="lg:w-[1200px] h-[200px] bg-zinc-300 rounded-[33px] sm:w-full ">
+            <div class="grid gap-x-6 md:grid-cols-3 lg:gap-x-12  ">
+                <div class="relative">
+                    <a href="./pages/dogs.html">
+                        <img class="rounded-[33px] w-full h-[200px]   transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                            src="./images/dog.png" alt="dogs section">
+                    </a>
+                    <p
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 hover:opacity-100 transition-opacity duration-500 text-white font-bold text-3xl">
+                        Dogs</p>
+                </div>
+                <div class="relative">
+                    <a href="./pages/dogs.html">
+                        <img class="rounded-[33px] w-full h-[200px] transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                            src="./images/cat.png" alt="cats section">
+                    </a>
+                    <p
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 hover:opacity-100 transition-opacity duration-500 text-white font-bold text-3xl">
+                        Cats</p>
+                </div>
+                <div class="relative">
+                    <a href="./pages/dogs.html">
+                        <img class="rounded-[33px] w-full h-[200px] transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                            src="./images/guinea.png" alt="small animal section">
+                    </a>
+                    <p
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 hover:opacity-100 transition-opacity duration-500 text-white font-bold text-3xl">
+                        Small Animals</p>
+                </div>
+               
+
+
+            </div>
+        </div>
+    </div>
+    <div class="w-100 mx-auto px-6 sm:max-w-2xl md:max-w-3xl md:px-12 lg:max-w-5xl xl:max-w-7xl xl:px-12 mb-10 sm:mt-[500px] lg:mt-10">
+        <div class="text-center">
+            <div class="block rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  dark:shadow-black/20 md:py-16 md:px-12"
+                style="
+                margin-top: 180px;
+                backdrop-filter: saturate(200%) blur(25px);
+              ">
+                <p class="mt-6 mb-16  tracking-tight ">
+                    Pets are nature's gift to humanity. It has been scientifically proven that opening our homes and
+                    hearts to a pet increases our longevity and improves our overall quality of life as well as the
+                    lives of our pets. At Pet Paradigm Professionals, our mission is to offer resources to help you care
+                    for your furry, scaly, feathery, and slimy loved ones. Our pet experts—or “Pexperts”—have been
+                    working with pet owners and professionals alike for the past twelve years. They offer one-on-one
+                    consultations with current and prospective pet owners as well as group presentations designed for
+                    veterinary, pet shelter, and pet breeding professionals. <br>
+
+
+
+                    Looking for basic pet care advice for the most common type of pets? Need additional help determining
+                    which type of pet is right for you and your family? We will work with you and provide tailored
+                    evidence-based pet care to ensure lifelong health and wellness of your new companion.
+
+                    <br>
+                <ul>
+                    Looking for your new best friend? The following organizations can help you find and adopt the
+                    perfect companion:
+
+                    <li> General Adoption Resources: https://theshelterpetproject.org/</li>
+
+                    <li> ASPCA: https://www.aspca.org/</li>
+
+                    <li> Fish Rescue: https://www.sterlingshelter.org/humane-society/koi-fish-rescue/</li>
+
+                    <li> Snake Rescue: https://savethesnakes.org/snakerescuecall/</li>
+
+                    <li> Bird Rescue: https://ftlob.rescuegroups.org/</li>
+
+                </ul>
+                <br>
+                <p>We are also happy to help you navigate the adoption process! We will guide you through each step in
+                the process from determining which type of pet is best suited for your family and home environment,
+                to completing the necessary paperwork, to bringing your new loved one home. Please fill out our
+                contact form to request a consultation. We will contact you within 48 hours to schedule a
+                consultation. All fields are required.</p>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <article class="bg-gray-100" id="contact">
+        <div class="mx-auto max-w-screen-lg px-4 py-16 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
+                <div class="lg:col-span-2 lg:py-12  ">
+                    <img class="  " src="./images/dogForm.png" alt="dog">
+
+                </div>
+
+                <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+                    <form action="" class="space-y-4">
+                        <p class="text-center text-[#CAC205] text-3xl text-bold ">Get Started Today!</p>
+                        <p class="text-center">Contact us for your fist consultation</p>
+                        <div>
+                            <label class="sr-only" for="name">Name</label>
+                            <input class="w-full rounded-lg border-gray-200 p-3 text-sm" placeholder="Name" type="text"
+                                id="name" />
+                        </div>
+
+                        <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+                            <div>
+                                <label class="sr-only" for="email">Email</label>
+                                <input class="w-full rounded-lg border-gray-200 p-3 text-sm" placeholder="Email address"
+                                    type="email" id="email" />
+                            </div>
+
+                            <div>
+                                <label class="sr-only" for="phone">Phone</label>
+                                <input class="w-full rounded-lg border-gray-200 p-3 text-sm" placeholder="Phone Number"
+                                    type="tel" id="phone" />
+                            </div>
+                            <div>
+                                <label class="sr-only" for="time">Time Zone</label>
+                                <input class="w-full rounded-lg border-gray-200 p-3 text-sm" placeholder="Time Zone"
+                                    type="tel" id="time" />
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+                            <div>
+                                <label class="sr-only" for="email">Pet's Name</label>
+                                <input class="w-full rounded-lg border-gray-200 p-3 text-sm" placeholder="Pet's Name"
+                                    type="email" id="email" />
+                            </div>
+
+                            <div>
+                                <label class="sr-only" for="phone">Age</label>
+                                <input class="w-full rounded-lg border-gray-200 p-3 text-sm" placeholder="Age"
+                                    type="tel" id="phone" />
+                            </div>
+                            <div>
+                                <label class="sr-only" for="time">Breed</label>
+                                <input class="w-full rounded-lg border-gray-200 p-3 text-sm" placeholder="Breed"
+                                    type="tel" id="time" />
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 gap-4 text-center sm:grid-cols-">
+                            <div>
+                                <input class="peer sr-only" id="option1" type="radio" tabindex="-1" name="option" />
+
+
+
+
+
+                                <div>
+                                    <label class="sr-only" for="message">Message</label>
+
+                                    <textarea class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                                        placeholder="Message" rows="8" id="message"></textarea>
+                                </div>
+
+                                <div class="mt-4 text-left">
+                                    <button type="submit"
+                                        class="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto ">
+                                        Send Enquiry
+                                    </button>
+                                </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer class="bg-[#003B6D] ">
+        <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+            <div class="flex justify-center text-teal-600">
+                <img class="h-16 w-16" src="./images/logo.png" alt="logo">
+            </div>
+
+            <p class="mx-auto mt-6 max-w-md text-center text-white leading-relaxed text-gray-500">
+                Paradigm Pet Professionals
+
+            </p>
+
+            <ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12 ">
+                <li>
+                    <a class="text-white transition hover:text-gray-700/75" href="/"> About </a>
+                </li>
+
+                <li>
+                    <a class="text-white transition hover:text-gray-700/75" href="/"> Careers </a>
+                </li>
+                <li>
+                    <a class="text-white transition hover:text-gray-700/75" href="/"> Pets</a>
+                </li>
+                <li>
+                    <a class="text-white transition hover:text-gray-700/75" href="/"> FAQS </a>
+                </li>
+
+                <li>
+                    <a class="text-white transition hover:text-gray-700/75" href="/"> Blog </a>
+                </li>
+            </ul>
+
+            <ul class="mt-12 flex justify-center gap-6 md:gap-8 ">
+                <li>
+                    <a href="/" rel="noreferrer" target="_blank"
+                        class="text-gray-700 transition hover:text-gray-700/75">
+                        <span class="sr-only">Facebook</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/" rel="noreferrer" target="_blank"
+                        class="text-gray-700 transition hover:text-gray-700/75">
+                        <span class="sr-only">Instagram</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </li>
+
+
+
+
+
+
+            </ul>
+            <p class="text-center mt-4">Copyright 2024. All rights reserved</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
