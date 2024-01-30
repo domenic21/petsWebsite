@@ -71,7 +71,7 @@
         <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
             <div class="flex h-16 items-center justify-between">
                 <div class="flex-1 md:flex md:items-center md:gap-12">
-                    <a class="block text-teal-600" href="/">
+                    <a class="block text-teal-600" href="./index.html">
                         <img class="w-[100px] h-[100px]" src="./images/logo1.png" />
                     </a>
                     <h1>Paradigm Pet Professionals</h1>
@@ -81,7 +81,7 @@
                     <nav aria-label="Global" class="hidden md:block">
                         <ul class="flex items-center gap-6 text-sm">
                             <li>
-                                <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                                <a class="text-gray-500 transition hover:text-gray-500/75" href="./index.html">
                                     Home
                                 </a>
                             </li>
@@ -150,31 +150,43 @@
         </div>
     </section>
     <!-- banner images -->
-    
+
+    <div class='flex items-center justify-center  px-24'>
+        <div>
+            <div class="group relative -ml-4 flex scroll-mt-40 items-center pl-4">
+                <a href="#"
+                    class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                        stroke="currentColor" aria-hidden="true" class="pointer-events-none h-3.5 w-3.5 rounded-lg">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"></path>
+                    </svg>
+                </a>
+
+            </div>
+
+            <div class="mt-8 grid grid-cols-3 gap-6 md:grid-cols-3">
+                <a class="grid w-full  transform cursor-pointer place-items-center rounded-xl border border-blue-gray-50 bg-white px-3 py-2 transition-all hover:scale-105 hover:border-blue-gray-100 hover:bg-blue-gray-50 hover:bg-opacity-25"
+                    href="./pages/cats.html">
+
+                    <img src="./images/cat.png" alt="cat section">
+
+                </a>
+                <a class="grid w-full min-w-[7rem] transform cursor-pointer place-items-center rounded-xl border border-blue-gray-50 bg-white px-3 py-2 transition-all hover:scale-105 hover:border-blue-gray-100 hover:bg-blue-gray-50 hover:bg-opacity-25"
+                    href="./pages/dogs.html">
+                    <img src="./images/dog.png" alt="dog section">
+                </a>
+                <a class="grid w-full min-w-[7rem] transform cursor-pointer place-items-center rounded-xl border border-blue-gray-50 bg-white px-3 py-2 transition-all hover:scale-105 hover:border-blue-gray-100 hover:bg-blue-gray-50 hover:bg-opacity-25"
+                    href="./pages/smallAnimals.html">
+                    <img src="./images/guinea.png" alt="small animals section">
+                </a>
+
+            </div>
+        </div>
+    </div>
 
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    <div class="w-100 mx-auto px-6 sm:max-w-2xl md:max-w-3xl md:px-12 lg:max-w-5xl xl:max-w-7xl xl:px-12 mb-10 sm:mt-[50px] lg:mt-10">
+    <div class="w-100 mx-auto px-6 sm:max-w-2xl md:max-w-3xl md:px-12 lg:max-w-5xl xl:max-w-7xl xl:px-12 mb-10 sm:mt-[30px] lg:mt-10">
         <div class="text-center">
             <div class="block rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  dark:shadow-black/20 md:py-16 md:px-12"
                 style="
@@ -244,7 +256,45 @@
               </div>
             </form>
           </div>
-      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- search bar -->
+
+    <div class=" bg-slate-500  px-20 py-20 w-[100%] flex justify-center ">
+        <form>
+            <div class="max-w-xl ">
+                <div class="flex space-x-1 items-center mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p class="text-white text-lg font-semibold">What are you looking for?</p>
+                </div>
+                <div class="flex space-x-4">
+                    <div class="flex rounded-md overflow-hidden w-[500px]">
+                        <input type="text" class="w-full rounded-md rounded-r-none" />
+                        <button
+                            class="bg-indigo-600 text-white px-6 text-lg font-semibold py-4 rounded-r-md">Go</button>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </div>
+
 
 
 
